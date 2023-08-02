@@ -1,0 +1,160 @@
+.formacao {
+  background: #141414;
+  color: #fff;
+}
+
+.formacao-container {
+  max-width: 1200px;
+  padding: 120px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 120px;
+  position: relative;
+}
+
+.formacao-container .sub-t {
+  color: #000000;
+  max-width: 5ch;
+}
+
+.formacao-texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  margin-bottom: 60px;
+  max-width: 50ch; /* 50 Caracteres */
+  color: #a3a3a3;
+}
+
+.formacao-texto strong {
+  color: #fff;
+}
+
+.facul-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-bottom: 60px;
+}
+
+.facul {
+  flex: 1; /* deixa um item do lado do outro */
+  background: #000;
+  padding: 20px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.4s;
+}
+
+.facul:hover {
+  /*  box-shadow: #4169e1 5px 5px, #6495ed 15px 15px, #0000ff 20px 20px; */
+  box-shadow: #4169e1 5px 5px, #6495ed 10px 10px, #0000ff 15px 15px;
+  transform: scale(1.05);
+}
+
+.facul-ano {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: #a3a3a3;
+  margin-bottom: 10px;
+}
+
+.facul-curso {
+  flex: 1; /* Cresce o máximo para acompanhar o conteúdo */
+  font-size: 1.125rem;
+  line-height: 1.4;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.facul-curso::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(180deg, #1548fd 0%, #457ee9 100%);
+  position: absolute;
+  left: -24px;
+}
+
+.facul-inst {
+  font-size: 1.125rem;
+  color: #a3a3a3;
+  text-transform: uppercase;
+}
+
+.cursos {
+  margin-bottom: 60px;
+}
+
+.form-extra h3 {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: #8f8f8f;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.form-extra h3::before {
+  display: block;
+  content: "";
+  width: 24px; /* Tamanho dos icones */
+  height: 24px;
+  position: absolute;
+  left: -36px;
+  top: -4px;
+}
+
+.cursos h3::before {
+  background: url("./imgs/cursos.svg") no-repeat;
+}
+
+.idiomas h3::before {
+  background: url("./imgs/idiomas.svg") no-repeat;
+}
+
+.form-extra li {
+  font-size: 1.125rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.form-extra span {
+  color: #8f8f8f;
+}
+
+.cursos li {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+  .formacao-container {
+    grid-template-columns: 1fr;
+    padding: 60px 20px;
+    gap: 40px;
+  }
+  .formacao-container .sub-t {
+    color: #fff;
+  }
+  .formacao-texto {
+    font-size: 1.25rem;
+  }
+  .form-extra h3::before {
+    position: initial;
+    margin-bottom: 10px;
+  }
+}
+
+.formacao-container::after {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url("./imgs/detalhe.svg") no-repeat;
+  position: absolute;
+  bottom: -60px;
+  left: 20px;
+}
