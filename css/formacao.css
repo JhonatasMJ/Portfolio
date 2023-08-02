@@ -48,7 +48,6 @@
 }
 
 .facul:hover {
-  /*  box-shadow: #4169e1 5px 5px, #6495ed 15px 15px, #0000ff 20px 20px; */
   box-shadow: #4169e1 5px 5px, #6495ed 10px 10px, #0000ff 15px 15px;
   transform: scale(1.05);
 }
@@ -153,7 +152,7 @@
   display: block;
   width: 130px;
   height: 100px;
-  background: url("./imgs/detalhe.svg") no-repeat;
+  background: url("../imgs/detalhe.svg") no-repeat;
   position: absolute;
   bottom: -60px;
   left: 20px;
